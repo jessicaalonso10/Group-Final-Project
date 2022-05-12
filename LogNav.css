@@ -1,0 +1,59 @@
+
+/*Nav bar with Logo*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+nav {
+    width:98%;
+    height: 75px;
+    background-color: bisque;
+    position:relative;
+    margin-top: 10px;
+    left:15px;
+    right:10px;
+    z-index: index 1;
+}
+nav .logo {
+   
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: bisque;
+}
+nav .logo p {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    float: left;
+    color: rgb(139, 37, 37);
+    text-shadow:0px;
+    padding-top: 0px;
+    letter-spacing: 5px;
+}
+nav .logo ul {
+    display: inline-block;
+    position:relative;
+    margin-top:10%;
+}
+
+ ul li{
+    list-style-type: none;
+    float: right;
+    margin-top: 10px;
+
+}
+ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+}
+:hover {
+    text-decoration: underline;
+}
