@@ -1,15 +1,95 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header
+nav {
+        width:98%;
+        height: 75px;
+        background-color: bisque;
+        position:fixed;
+        margin-top: 10px;
+        left:15px;
+        right:10px;
+        z-index: index 1;
+    }
+    nav .logo {
+       
+        font-size: 30px;
+        padding-left: 15px;
+        padding-top: 10px;
+        background-color: bisque;
+    }
+    nav .logo p {
+        font-family: 'Great Vibes', cursive;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 900;
+        float: left;
+        color: rgb(139, 37, 37);
+        text-shadow:0px;
+        padding-top: 5px;
+        letter-spacing: 5px;
+    }
+    nav .logo ul {
+        display: inline-block;
+        position:relative;
+        margin-top:10%;
+    }
+    
+     ul li{
+        list-style-type: none;
+        float: right;
+        margin-top: 10px;
+    
+    }
+    ul li a {
+        
+        text-decoration: none;
+        padding-right: 30px;
+        padding-left: 30px;;
+        padding-top: 10px;
+        margin-top: 20px;
+        font-size: 30px;
+        color: rgb(139, 37, 37);
+        border-radius: 5px;
+        
+    }
+    a:hover {
+border-color: rgb(139, 37, 37);;   
+border-style: double;
+padding-top: 5px;
+transition: .2s;
+text-decoration: none;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color:white;
+        float:right;
+        line-height: 100px;
+        margin-right:40px;
+        padding-right: 20px;
+        padding-top: 20px;
+        cursor:pointer;
+    
+    }
+    #check{
+        display:none;
+    }
+
+
 .welcome{
 text-align: center;
 font-size: 18px;
 color: navy;
-}
+margin-top: 80px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-.whole{
-background-color: peachpuff;
 }
-
 .first{
-
+margin-top: 50px;
 font-size: 18px;
 color: navy;
 text-align: center;
@@ -27,7 +107,7 @@ flex-direction: column;
 text-align: right;
 color: navy;
 }
-
+*/
 .imagetwo{
  text-align: center;
 }
@@ -96,21 +176,6 @@ text-align: center;
 color: navy;
 height: 150px;
 }
-
-* {
-    margin:0px;
-    padding:0px;
-}
-nav {
-    width:98%;
-    height: 75px;
-    background-color: peachpuff;
-    position:relative;
-    margin-top: 10px;
-    left:15px;
-    right:10px;
-    z-index: index 1;
-}
 nav .logo {
    
     font-size: 30px;
@@ -152,4 +217,71 @@ ul li a {
 }
 :hover {
     text-decoration: underline;
+}
+
+
+form{
+    justify-content:space-around;
+
+}
+form input{
+    width:fit-content
+}
+
+
+@media (max-width:952px) {
+    nav .logo p{
+       
+        font-size: 20px;
+        padding-left: 5px;
+        font-weight: 0px;
+    }
+
+    ul li a {
+        
+        text-decoration: none;
+        padding-right: 25px;
+        padding-left: 0px;
+        padding-top: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+        
+    }
+   
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:navy;
+        top:80px;
+        left:-100%;
+        transition:all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin:50px;
+        margin-right: 15px;
+        margin-left: 5px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:18px;
+        color: white;
+    }
+    a:hover,a.active{
+        background:none;
+        
+        text-transform: uppercase;
+        
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
