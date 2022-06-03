@@ -3,3 +3,4 @@ Sonia-Homepage
 Jeremy-Meet Staff/testimonials
 Jessica-Health Benefits
 Majestic-Membership/class
+Jeremy-contact
