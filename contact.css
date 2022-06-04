@@ -1,14 +1,9 @@
-<<<<<<< HEAD
+
 * {
     margin:0%;
     padding: 0%;
     box-sizing: border-box;
-}/*
-body{
-    background-image: url(/FITNESS\ CENTER\ AND\ GYM\ .png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
+}
 
 header
 nav {
@@ -68,6 +63,7 @@ border-color: rgb(139, 37, 37);;
 border-style: double;
 padding-top: 5px;
 transition: .0s;
+text-decoration: none;
 
     
     }
@@ -196,6 +192,7 @@ footer{
     nav ul li a{
         font-size:18px;
         color: white;
+        text-decoration: none;
     }
     
     a:hover,a.active{
@@ -203,13 +200,7 @@ footer{
         border-color: white;
         text-transform: uppercase;
         padding:inherit;
-        
-    }
-
-    a:hover,a.active{
-        background:none;
-        text-transform: uppercase;
-       
+        text-decoration: none;
         
     }
     #check:checked ~ ul{
@@ -225,8 +216,7 @@ footer{
         padding-top: 10px;
     }
 }
-=======
-/*----- CONTACT us page-------*/
+/*----- CONTACT us page-------
 
 .contact-us {
     width: 80%;
@@ -326,130 +316,3 @@ footer{
 
 
 
-
-/*-----nav------*/
-
-
-
-* {
-    margin:0px;
-    padding:0px;
-}
-nav {
-    width: 98%;
-    height: 75px;
-    background-color: bisque;
-    position:relative;
-    margin-top: 0px;
-    left: 15px;
-    right: 35px;
-    z-index: index 1;
-}
-nav .logo {
-   
-    font-size: 30px;
-    padding-left: 15px;
-    padding-top: 10px;
-    background-color: bisque;
-}
-nav .logo p {
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 900;
-    float: left;
-    color: rgb(139, 37, 37);
-    text-shadow:0px;
-    padding-top: 0px;
-    letter-spacing: 5px;
-}
-nav .logo ul {
-    display: inline-block;
-    position:relative;
-    margin-top:10%;
-}
-
- ul li{
-    list-style-type: none;
-    float: right;
-    margin-top: 10px;
-
-}
-ul li a {
-    text-decoration: none;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: black;
-}
-:hover {
-    text-decoration: underline;
-}
-
-.red-btn {
-    border: 1px solid navy;
-    background: transparent;
-    color: navy;
-}
-
-.red-btn:hover {
-    color: white;
-}
-
-
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: navy;
-    border: 1px solid navy;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    border-style: solid;
-}
-
-.hero-btn:hover {
-    border: 1px solid navy;
-    background: navy;
-    transition: 1s;
-}
-
-nav .fa{
-    display: none;
-}
-
-@media( max-width:700px) {
-   .text-box h1 {
-       font-size: 20px;
-   }
-   .nav-links ul li{
-       display: block;
-   }
-   .nav-links ul li {
-       position: fixed;
-       background: navy;
-       height: 100vh;
-       width: 200px;
-       top: 0;
-       right: -200;
-       text-align: left;
-       z-index: 2;
-       transition: 1s;
-         }
-         nav .fa{
-             display: block;
-             color:white;
-             margin:10px;
-             font-size:22px;
-             cursor: pointer;
-         }
-         .nav-links ul {
-             padding: 30px;
-         }
-}
-
->>>>>>> d1d308d6c9eac37c4c6ad5140e82d9c90be7284b
