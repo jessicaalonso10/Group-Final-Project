@@ -1,0 +1,208 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/FITNESS\ CENTER\ AND\ GYM\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+nav {
+        width:98%;
+        height: 75px;
+        background-color: bisque;
+        position:fixed;
+        margin-top: 10px;
+        left:15px;
+        right:10px;
+        z-index: index 1;
+    }
+    nav .logo {
+       
+        font-size: 30px;
+        padding-left: 15px;
+        padding-top: 10px;
+        background-color: bisque;
+    }
+    nav .logo p {
+        font-family: 'Great Vibes', cursive;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 900;
+        float: left;
+        color: rgb(139, 37, 37);
+        text-shadow:0px;
+        padding-top: 5px;
+        letter-spacing: 5px;
+    }
+    nav .logo ul {
+        display: inline-block;
+        position:relative;
+        margin-top:10%;
+    }
+    
+     ul li{
+        list-style-type: none;
+        float: right;
+        margin-top: 10px;
+    
+    }
+    ul li a {
+        
+        text-decoration: none;
+        padding-right: 30px;
+        padding-left: 30px;;
+        padding-top: 10px;
+        margin-top: 20px;
+        font-size: 30px;
+        color: rgb(139, 37, 37);
+        border-radius: 5px;
+        
+    }
+    a:hover {
+border-color: rgb(139, 37, 37);;   
+border-style: double;
+padding-top: 5px;
+transition: .2s;
+
+    
+    }
+
+main button{
+    position:relative;
+    font-family: 'Great Vibes', cursive;
+    color: rgb(139, 37, 37);
+    top:450px;
+    left:120px;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    z-index: 7;
+    border-color: rgb(139, 37, 37);
+    border-style: double;
+    border-width: 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding:10px 10px;
+    background-color: bisque;
+}
+.butt:hover{
+    background-color: transparent;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 40px;
+    margin-right:40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor:pointer;
+
+}
+#check{
+    display:none;
+}
+
+footer{
+
+    display:flex;
+    justify-content:center;
+    position: relative;
+    bottom: -560px;
+    width:98%;
+    height:80px;
+    right:-15px;
+    background-color: peachpuff;
+}
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+@media (max-width:952px) {
+    nav .logo p{
+       
+        font-size: 20px;
+        padding-left: 5px;
+        font-weight: 0px;
+    }
+
+    ul li a {
+        
+        text-decoration: none;
+        padding-right: 25px;
+        padding-left: 0px;
+        padding-top: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+}
+footer{
+    display:flexbox;
+}
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+        
+    }
+   
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:navy;
+        top:80px;
+        left:-100%;
+        transition:all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin:50px;
+        margin-right: 15px;
+        margin-left: 5px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:18px;
+        color: white;
+    }
+    a:hover,a.active{
+        background:none;
+        border-color: white;
+        text-transform: uppercase;
+        padding:inherit;
+        
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+   
+    main button{
+        color: whitesmoke;
+        border-color: whitesmoke;
+        background-color: navy;
+
+    }
+    .butt:hover{
+        color:black
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+}
+/*
+section{
+    background:url(/FITNESS\ CENTER\ AND\ GYM\ .png);
+    background-size: cover;
+    height:calc(100vh-80px);
+}
+*/
